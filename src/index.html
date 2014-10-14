@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <head>
+    <title>Canvas example + Flickr</title>
+  </head>
+  <body>
+    <style>
+    .filters, select {
+      margin: 10px 0;
+    }
+    </style>
+
+    <h1>Video / Canvas</h1>
+
+    <div class="filters">
+      <select name="filterOptions">
+        <option value="">Select a filter to apply</option>
+        <option value="grayscale">Grayscale</option>
+        <option value="brightness">Brightness</option>
+        <option value="threshold">Threshold</option>
+        <option value="convolute">Convolute</option>
+      </select>
+      <div class="brightness"> <span>Brightness: </span><input type="number" name="brightness" id="brightness" value="0" /> </div>
+      <div class="threshold"> <span>Threshold: </span><input type="number" name="threshold" id="threshold" value="0" /> </div>
+      <div class="convolute">
+        <span>Convolute: </span>
+        <input type="number" name="convolute_1" id="convolute_1" value="0"/>
+        <input type="number" name="convolute_2" id="convolute_2" value="0"/>
+        <input type="number" name="convolute_3" id="convolute_3" value="0"/>
+        <input type="number" name="convolute_4" id="convolute_4" value="0"/>
+        <input type="number" name="convolute_5" id="convolute_5" value="0"/>
+        <input type="number" name="convolute_6" id="convolute_6" value="0"/>
+        <input type="number" name="convolute_7" id="convolute_7" value="0"/>
+        <input type="number" name="convolute_8" id="convolute_8" value="0"/>
+        <input type="number" name="convolute_9" id="convolute_9" value="0"/>
+      </div>
+    </div>
+
+    <canvas></canvas>
+    <video></video>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
